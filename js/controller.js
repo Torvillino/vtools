@@ -2,6 +2,7 @@ angular.module('vtools', [])
 
 .controller('LoginController', function($scope, $http) {
   
+	componentHandler.upgradeDom();
 	$scope.isAuth = false;
 	$scope.tittle = "Vtools";
 	
