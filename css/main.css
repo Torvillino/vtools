@@ -38,3 +38,17 @@ div.mdl-layout__drawer > nav.mdl-navigation > a.mdl-navigation__link {
 .margin-left-20{
 	margin-left: 20px;
 }
+
+.home-card-wide.mdl-card {
+	width: 100%;
+	min-height: 300px !important;
+}
+.home-card-background{
+	background: url('../img/home.png');
+    background-repeat: no-repeat;
+    background-position: 80%;
+}
+
+.content{
+	padding: 30px;
+}
