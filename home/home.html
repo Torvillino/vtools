@@ -1,8 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>vtools</title>
-<body ng-app="vtools">
-</body>
+	<meta charset="ISO-8859-1">
+	<title>vtools</title>
+	<!--  ANGULAR -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+	<!--  MDL -->
+	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.brown-light_blue.min.css" />
+	<!--  LOCAL -->
+	<script src="../js/controller.js"></script>
+	<link rel="stylesheet" href="../css/main.css">
+	<body ng-app="vtools">
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+			<header class="mdl-layout__header">
+				<div class="mdl-layout__header-row">
+					<div class="mdl-layout-spacer"></div>
+				</div>
+			</header>
+			<div class="mdl-layout__drawer">
+				<span class="mdl-layout-title">Menu</span>
+				<nav class="mdl-navigation">
+					<a class="mdl-navigation__link">
+						<i class="material-icons md-18">lightbulb_outline</i><label class="margin-left-20">Luces</label>
+					</a> 
+					<a class="mdl-navigation__link" href="">
+						<i class="material-icons md-18">format_align_justify</i><label class="margin-left-20">Persianas</label>
+					</a> 
+					<a class="mdl-navigation__link" href="">
+						<i class="material-icons md-18">ac_unit</i><label class="margin-left-20">Calefación</label>
+					</a>
+					<a class="mdl-navigation__link" href="">
+						<i class="material-icons md-18">speaker_phone</i><label class="margin-left-20">Garaje</label>
+					</a>
+				</nav>
+			</div>
+			<main class="mdl-layout__content">
+				<div class="page-content">
+				</div>
+			</main>
+		</div>
+	</body>
 </html>
