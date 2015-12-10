@@ -44,7 +44,7 @@ div.mdl-layout__drawer > nav.mdl-navigation > a.mdl-navigation__link {
 	min-height: 300px !important;
 }
 .home-card-background{
-	background: url('../img/home.png');
+	/*background: url('../img/home.png');*/
     background-repeat: no-repeat;
     background-position: 80%;
 }
