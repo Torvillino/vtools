@@ -1,14 +1,11 @@
 /** Inicio de la aplicacion */
 var vtoolsApp = angular.module('vtoolsApp', ['ngRoute']);
 
-
-
-
 /** Rutas de la aplicacion*/
 vtoolsApp.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.when('/home', {
 		templateUrl : 'partials/welcome.html',
-		controller : 'HomeController'
+		controller : 'WelcomeController'
 	}).when('/light', {
 		templateUrl : 'partials/light.html',
 		controller : 'LightController'
@@ -18,21 +15,16 @@ vtoolsApp.config(['$routeProvider', function($routeProvider) {
 	}).when('/heat', {
 		templateUrl : 'partials/heat.html',
 		controller : 'HeatController'
+	}).when('/garden', {
+		templateUrl : 'partials/garden.html',
+		controller : 'GardenController'
 	}).when('/garage', {
 		templateUrl : 'partials/garage.html',
 		controller : 'GarageController'
+	}).when('/ip', {
+		templateUrl : 'partials/ip.html',
+		controller : 'IPController'
 	}).otherwise({
         redirectTo: '/home'
     });
 }]);
-
-/** Controller*/
-vtoolsApp.controller('LoginController', function($scope, $http) {
-	
-	$scope.isAuth = false;
-	$scope.tittle = "Vtools";
-	
-	$scope.auth= function auth() {
-		isAuth= true;
-	};
-});

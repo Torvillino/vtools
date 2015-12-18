@@ -1,5 +1,5 @@
 /** Controller*/
-vtoolsApp.controller('LoginController', function($scope, $http) {
+vtoolsApp.controller('GardenController', function($scope, $http) {
 	
 	$scope.isAuth = false;
 	$scope.tittle = "Vtools";

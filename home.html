@@ -8,6 +8,7 @@
 	<!--  MDL -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.brown-light_blue.min.css" />
+	<!--<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">-->
 	<!--  LOCAL -->
 	<link rel="stylesheet" href="css/main.css">
 	<body ng-app="vtoolsApp">
@@ -27,17 +28,24 @@
 						<i class="material-icons md-18">lightbulb_outline</i><label class="margin-left-20">Luces</label>
 					</a> 
 					<a class="mdl-navigation__link" href="#/blind">
-						<i class="material-icons md-18">format_align_justify</i><label class="margin-left-20">Persianas</label>
+						<i class="material-icons md-18">line_weight</i><label class="margin-left-20">Persianas</label>
 					</a> 
 					<a class="mdl-navigation__link" href="#/heat">
 						<i class="material-icons md-18">ac_unit</i><label class="margin-left-20">Calefación</label>
 					</a>
-					<a class="mdl-navigation__link" href="#/garage">
-						<i class="material-icons md-18">speaker_phone</i><label class="margin-left-20">Garaje</label>
+					<a class="mdl-navigation__link" href="#/garden">
+						<i class="material-icons md-18">spa</i><label class="margin-left-20">Garaje</label>
 					</a>
+					<a class="mdl-navigation__link" href="#/garage">
+						<i class="material-icons md-18">settings_remote</i><label class="margin-left-20">Garaje</label>
+					</a>
+					<a class="mdl-navigation__link" href="#/ip">
+						<i class="material-icons md-18">settings_system_daydream</i><label class="margin-left-20">IP</label>
+					</a>
+
 				</nav>
 			</div>
-			<main class="mdl-layout__content content">
+			<main class="mdl-layout__content content home-main">
 				<div ng-view>
 					<div class="page-content">
 						<div class="home-card-wide home-card-background mdl-card mdl-shadow--2dp">
@@ -54,10 +62,22 @@
 		</div>
 		<!--  ANGULAR -->
 		<script src="js/angular/angular.min.js"></script>
+		<script src="js/angular/angular-animate.min.js"></script>
+		<script src="js/angular/angular-aria.min.js"></script>
+		<script src="js/angular/angular-messages.min.js"></script>
 		<script src="js/angular/angular-route.js"></script>
 		<!--  MDL -->
 		<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js">-->
 		<!--  LOCAL -->
 		<script src="js/main.js"></script>
+		<script src="js/controller/blindController.js"></script>
+		<script src="js/controller/garageController.js"></script>
+		<script src="js/controller/gardenController.js"></script>
+		<script src="js/controller/heatController.js"></script>
+		<script src="js/controller/ipController.js"></script>
+		<script src="js/controller/lightController.js"></script>
+		<script src="js/controller/loginController.js"></script>
+		<script src="js/controller/welcomeController.js"></script>
 	</body>
 </html>

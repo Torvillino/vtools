@@ -39,6 +39,10 @@ div.mdl-layout__drawer > nav.mdl-navigation > a.mdl-navigation__link {
 	margin-left: 20px;
 }
 
+.home-main{
+  background-color: #E6E6E6;
+}
+
 .home-card-wide.mdl-card {
 	width: 100%;
 	min-height: 300px !important;
