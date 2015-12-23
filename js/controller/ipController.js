@@ -10,6 +10,10 @@ vtoolsApp.controller('IPController', function($scope, $http) {
 		.success(function (response) {
 			// En caso de OK
 			alert("OK");
+		})
+		.error(function (response) {
+			// En caso de OK
+			alert("NO OK");
 		});
 	};
 });
