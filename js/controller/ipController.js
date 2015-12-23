@@ -6,14 +6,24 @@ vtoolsApp.controller('IPController', function($scope, $http) {
 	// Metodo para realizar la llamada al servidor y recargar la IP
 	$scope.reloadIp = function(){ 
 		$http
-		.jsonp('http://' + $scope.ip + '/?callback=JSON_CALLBACK&ope=IP')
+		.jsonp('http://' + $scope.ip + '/?callback=JSON_CALLBACK&ope=IP&end')
 		.success(function (response) {
-			// En caso de OK
-			alert("OK");
+			$scope.ip = response.result;
 		})
 		.error(function (response) {
-			// En caso de OK
-			alert("NO OK");
+			alert("Error");
+		});
+	};
+
+	// Metodo para realizar la llamada al servidor y recargar la IP
+	$scope.reloadIp = function(){ 
+		$http
+		.jsonp('http://' + $scope.ip + '/?callback=JSON_CALLBACK&ope=FTP&end')
+		.success(function (response) {
+			alert("Ok");
+		})
+		.error(function (response) {
+			alert("Error");
 		});
 	};
 });
