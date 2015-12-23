@@ -5,15 +5,11 @@ vtoolsApp.controller('IPController', function($scope, $http) {
 
 	// Metodo para realizar la llamada al servidor y recargar la IP
 	$scope.reloadIp = function(){
-		$http({
-		  method: 'GET',
-		  url: 'http://' + $scope.ip + '/ope=IP'
-		}).then(function successCallback(response) {
+		$http
+		.jsonp('http://' + $scope.ip + '/ope=IP')
+		.success(function (response) {
 			// En caso de OK
 			alert("OK");
-		}, function errorCallback(response) {
-		    // En caso de error
-		    alert("ERROR");
 		});
 	};
 });
