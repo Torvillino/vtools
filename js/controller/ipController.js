@@ -16,7 +16,7 @@ vtoolsApp.controller('IPController', function($scope, $http) {
 	};
 
 	// Metodo para realizar la llamada al servidor y recargar la IP
-	$scope.reloadIp = function(){ 
+	$scope.uploadFtp = function(){ 
 		$http
 		.jsonp('http://' + $scope.ip + '/?callback=JSON_CALLBACK&ope=FTP&end')
 		.success(function (response) {
