@@ -4,10 +4,9 @@ vtoolsApp.controller('IPController', function($scope, $http) {
 
 
 	// Metodo para realizar la llamada al servidor y recargar la IP
-	$scope.reloadIp = function(){
-		var time = 
+	$scope.reloadIp = function(){ 
 		$http
-		.jsonp('http://' + $scope.ip + '/?ope=IP&callback=JSON_CALLBACK')
+		.jsonp('http://' + $scope.ip + '/ope=IP?callback=JSON_CALLBACK')
 		.success(function (response) {
 			// En caso de OK
 			alert("OK");
